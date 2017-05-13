@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "predev": "rm -rf public",
-    "dev": "brunch watch --server --port 9000 --env development",
+    "dev": "brunch watch --server --env development --jobs 4",
     "preprod": "rm -rf public",
     "prod": "brunch build --production",
     "precommit": "npm-sort && prettier --print-width 120 --single-quote --write 'app/**/*.js' && git add ."
